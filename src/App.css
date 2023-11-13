@@ -1,42 +1,55 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.Page{
+  display:grid;
+  grid-template-columns: 1;
+  grid-template-rows: 30% 70%;
+  width: 100vw;
+  height:100vh;
+  align-items: center;
+  justify-items: center;
 }
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.Top{
+  margin-top:5vh;
+  width:50%;
+  height:80%;
+  border-color:#768fbd;
+  border-width: 3px;
+  border-style:solid;
+  border-radius: 20px;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+.Logo{
+  height:70%;
+  margin-left: 40px;
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.Score{
+  margin-right:40px;
+  height:70%;
+  background-color:rgb(240, 240, 240);
+  width:250px;
+  border-radius:20px;
+  border-style:solid;
+  border-color:black;
+  border-width:3px
 }
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Rock{
+  position:absolute;
+  left:42%;
+  bottom:0px;
+  border-color: radial-gradient(hsl(349, 71%, 52%)0%, hsl(349, 70%, 56%) 100%);
+  border-style:solid;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.Paper{
+  position:absolute;
+  left:-10px;
+  top:-20px;
 }
-
-.card {
-  padding: 2em;
+.Scissors{
+  position:absolute;
+  right:-10px;
+  top:-20px;
 }
-
-.read-the-docs {
-  color: #888;
+.Game{
+  position:relative;
 }
