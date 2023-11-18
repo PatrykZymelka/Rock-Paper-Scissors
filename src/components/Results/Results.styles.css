@@ -1,0 +1,16 @@
+.Result{
+    width:80%;
+    justify-items: center;
+    align-items: center;
+    display:grid;
+    grid-template-columns: 33% 33% 33%;
+}
+.Rematch{
+
+}
+.User{
+
+}
+.Computer{
+
+}
